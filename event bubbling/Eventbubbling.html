@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .container{
+            background-color: aqua;
+            padding: 14px;
+            margin: 14px;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+        }
+        .largebox{
+            background-color: blueviolet;
+            padding: 14px;
+            margin: 14px;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+        }
+        .smallbox{
+            background-color: brown;
+            padding: 14px;
+            margin: 14px;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        I am Container
+        <div class="largebox">
+            I am largebox
+            <div class="smallbox">
+                I am smallbox
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
